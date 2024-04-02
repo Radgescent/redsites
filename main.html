@@ -1,0 +1,279 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="styles/global.css">
+</head>
+<body>
+    <nav class="nav">
+        <a href="#"><img src="Images/logo.png" alt="logo"></a>
+        <div class="nav-menu">
+            <div class="dropdown">
+                <button class="dropbtn">Meals</button>
+                <div class="dropdown-content">
+                    <a href="#">Breakfast</a>
+                    <a href="#">Lunch</a>
+                    <a href="#">Dinner</a>
+                    <a href="#">Dessert</a>
+                    <a href="#">Appetizer</a>
+                    <a href="#">Sides</a>
+                </div>
+            </div>
+            <div class="dropdown">
+                <button class="dropbtn">Cuisines</button>
+                <div class="dropdown-content">
+                    <a href="#">American</a>
+                    <a href="#">Chinese</a>
+                    <a href="#">French</a>
+                    <a href="#">Italian</a>
+                    <a href="#">Mexican</a>
+                    <a href="#">Spanish</a>
+                </div>
+            </div>
+            <div class="dropdown">
+                <button class="dropbtn">Diets</button>
+                <div class="dropdown-content">
+                    <a href="#">Vegan</a>
+                    <a href="#">Vegetarian</a>
+                    <a href="#">Ketogenic</a>
+                    <a href="#">Paleo</a>
+                </div>
+            </div>
+        </div>
+        <div class="search-container">
+            <button type="submit" class="search-button"><img src="Images/search.png" alt="Search"></button>
+            <input type="text" class="search-input" placeholder="Search">
+            <a href="favorites.html" id="fave"><img src="Images/heart.png" alt="heart"></a>
+        </div>
+    </nav>
+    <hr>
+    <section class="featured">
+        <video width="1346" height="591" autoplay muted playsinline loop>
+            <source src="Videos/overhead-videos-food-video-tutorial.mp4" type="video/mp4">
+            <source src="movie.ogg" type="video/ogg">
+            Your browser does not support the video tag.
+        </video>
+        <div class="featured-description">
+            <h1>Chicken Omelette</h1>
+            <p>Is a delicious and satisfying dish made by combining beaten eggs with cooked chicken and various other ingredients, such as vegetables, cheese, herbs, and spices.</p>
+            <button type="button">Start Cooking</button>
+        </div>
+    </section>
+    <h2>Popular Recipes</h2>
+    <section class="popular-recipes">
+        <div class="recipe-container">
+            <a href="#" class="recipe">
+                <img src="Images/Fried-Chicken-Wing-600x600.webp" alt="Fried Wings">
+                <div class="recipe-details">
+                    <h3>Fried Chicken Wings</h3>
+                    <div class="rating" id="rating1">
+                        <input class="star-input" type="radio" name="rating1" id="star1-5" value="5">
+                        <label class="star-label" for="star1-5">&#9733;</label>
+                        <input class="star-input" type="radio" name="rating1" id="star1-4" value="4">
+                        <label class="star-label" for="star1-4">&#9733;</label>
+                        <input class="star-input" type="radio" name="rating1" id="star1-3" value="3">
+                        <label class="star-label" for="star1-3">&#9733;</label>
+                        <input class="star-input" type="radio" name="rating1" id="star1-2" value="2">
+                        <label class="star-label" for="star1-2">&#9733;</label>
+                        <input class="star-input" type="radio" name="rating1" id="star1-1" value="1">
+                        <label class="star-label" for="star1-1">&#9733;</label>
+                    </div>
+                    <p>Delicious crispy fried chicken wings.</p>
+                </div>
+            </a>
+            <a href="#" class="recipe">
+                <img src="Images/Margherita-Pizza.jpg" alt="Margherita Pizza">
+                <div class="recipe-details">
+                    <h3>Classic Margherita Pizza</h3>
+                    <div class="rating" id="rating2">
+                        <input class="star-input" type="radio" name="rating2" id="star2-5" value="5">
+                        <label class="star-label" for="star2-5">&#9733;</label>
+                        <input class="star-input" type="radio" name="rating2" id="star2-4" value="4">
+                        <label class="star-label" for="star2-4">&#9733;</label>
+                        <input class="star-input" type="radio" name="rating2" id="star2-3" value="3">
+                        <label class="star-label" for="star2-3">&#9733;</label>
+                        <input class="star-input" type="radio" name="rating2" id="star2-2" value="2">
+                        <label class="star-label" for="star2-2">&#9733;</label>
+                        <input class="star-input" type="radio" name="rating2" id="star2-1" value="1">
+                        <label class="star-label" for="star2-1">&#9733;</label>
+                    </div>
+                    <p>A timeless favorite featuring a crispy thin<br> crust, tangy tomato sauce, fresh <br>mozzarella cheese, and fragrant basil <br>leaves.</p>
+                </div>
+            </a>
+            <a href="#" class="recipe">
+                <img src="Images/Garlic-Butter-Shrimp-Pasta.jpg" alt="Garlic Butter Shrimp Pasta">
+                <div class="recipe-details">
+                    <h3>Garlic Butter Shrimp Pasta</h3>
+                    <div class="rating" id="rating3">
+                        <input class="star-input" type="radio" name="rating3" id="star3-5" value="5">
+                        <label class="star-label" for="star3-5">&#9733;</label>
+                        <input class="star-input" type="radio" name="rating3" id="star3-4" value="4">
+                        <label class="star-label" for="star3-4">&#9733;</label>
+                        <input class="star-input" type="radio" name="rating3" id="star3-3" value="3">
+                        <label class="star-label" for="star3-3">&#9733;</label>
+                        <input class="star-input" type="radio" name="rating3" id="star3-2" value="2">
+                        <label class="star-label" for="star3-2">&#9733;</label>
+                        <input class="star-input" type="radio" name="rating3" id="star3-1" value="1">
+                        <label class="star-label" for="star3-1">&#9733;</label>
+                    </div>
+                    <p>Succulent shrimp cooked in a rich garlic<br> butter sauce, served over al dente pasta<br> and garnished with fresh parsley and <br>grated Parmesan cheese.</p>
+                </div>
+            </a>
+            <a href="#" class="recipe">
+                <img src="Images/BBQ-Pulled-Pork-Sandwich.jpg" alt="BBQ Pulled Pork Sandwich">
+                <div class="recipe-details">
+                    <h3>BBQ Pulled Pork Sandwich</h3>
+                    <div class="rating" id="rating4">
+                        <input class="star-input" type="radio" name="rating4" id="star4-5" value="5">
+                        <label class="star-label" for="star4-5">&#9733;</label>
+                        <input class="star-input" type="radio" name="rating4" id="star4-4" value="4">
+                        <label class="star-label" for="star4-4">&#9733;</label>
+                        <input class="star-input" type="radio" name="rating4" id="star4-3" value="3">
+                        <label class="star-label" for="star4-3">&#9733;</label>
+                        <input class="star-input" type="radio" name="rating4" id="star4-2" value="2">
+                        <label class="star-label" for="star4-2">&#9733;</label>
+                        <input class="star-input" type="radio" name="rating4" id="star4-1" value="1">
+                        <label class="star-label" for="star4-1">&#9733;</label>
+                    </div>
+                    <p>Tender slow-cooked pulled <br>pork, smothered in tangy barbecue sauce</p>
+                </div>
+            </a>
+            <a href="#" class="recipe">
+                <img src="Images/Caprese-Salad.jpg" alt="Caprese Salad">
+                <div class="recipe-details">
+                    <h3>Caprese Salad</h3>
+                    <div class="rating" id="rating5">
+                        <input class="star-input" type="radio" name="rating5" id="star5-5" value="5">
+                        <label class="star-label" for="star5-5">&#9733;</label>
+                        <input class="star-input" type="radio" name="rating5" id="star5-4" value="4">
+                        <label class="star-label" for="star5-4">&#9733;</label>
+                        <input class="star-input" type="radio" name="rating5" id="star5-3" value="3">
+                        <label class="star-label" for="star5-3">&#9733;</label>
+                        <input class="star-input" type="radio" name="rating5" id="star5-2" value="2">
+                        <label class="star-label" for="star5-2">&#9733;</label>
+                        <input class="star-input" type="radio" name="rating5" id="star5-1" value="1">
+                        <label class="star-label" for="star5-1">&#9733;</label>
+                    </div>
+                    <p>A refreshing salad</p>
+                </div>
+            </a>
+            <a href="#" class="recipe">
+                <img src="Images/Chicken-Alfredo.jpg" alt="Chicken Alfredo">
+                <div class="recipe-details">
+                    <h3>Chicken Alfredo</h3>
+                    <div class="rating" id="rating6">
+                        <input class="star-input" type="radio" name="rating6" id="star6-5" value="5">
+                        <label class="star-label" for="star6-5">&#9733;</label>
+                        <input class="star-input" type="radio" name="rating6" id="star6-4" value="4">
+                        <label class="star-label" for="star6-4">&#9733;</label>
+                        <input class="star-input" type="radio" name="rating6" id="star6-3" value="3">
+                        <label class="star-label" for="star6-3">&#9733;</label>
+                        <input class="star-input" type="radio" name="rating6" id="star6-2" value="2">
+                        <label class="star-label" for="star6-2">&#9733;</label>
+                        <input class="star-input" type="radio" name="rating6" id="star6-1" value="1">
+                        <label class="star-label" for="star6-1">&#9733;</label>
+                    </div>
+                    <p>Juicy grilled chicken breast</p>
+                </div>
+            </a>            
+            <a href="#" class="recipe">
+                <img src="Images/Beef-Tacos.jpg" alt="Beef Tacos">
+                <div class="recipe-details">
+                    <h3>Beef Tacos</h3>
+                    <div class="rating" id="rating7">
+                        <input class="star-input" type="radio" name="rating7" id="star7-5" value="5">
+                        <label class="star-label" for="star7-5">&#9733;</label>
+                        <input class="star-input" type="radio" name="rating7" id="star7-4" value="4">
+                        <label class="star-label" for="star7-4">&#9733;</label>
+                        <input class="star-input" type="radio" name="rating7" id="star7-3" value="3">
+                        <label class="star-label" for="star7-3">&#9733;</label>
+                        <input class="star-input" type="radio" name="rating7" id="star7-2" value="2">
+                        <label class="star-label" for="star7-2">&#9733;</label>
+                        <input class="star-input" type="radio" name="rating7" id="star7-1" value="1">
+                        <label class="star-label" for="star7-1">&#9733;</label>
+                    </div>
+                    <p>Flavorful seasoned ground beef</p>
+                </div>
+            </a>
+            <a href="#" class="recipe">
+                <img src="Images/Lemon-Garlic-Roast-Chicken.jpg" alt="Lemon Garlic Roast Chicken">
+                <div class="recipe-details">
+                    <h3>Lemon Garlic Roast Chicken</h3>
+                    <div class="rating" id="rating8">
+                        <input class="star-input" type="radio" name="rating8" id="star8-5" value="5">
+                        <label class="star-label" for="star8-5">&#9733;</label>
+                        <input class="star-input" type="radio" name="rating8" id="star8-4" value="4">
+                        <label class="star-label" for="star8-4">&#9733;</label>
+                        <input class="star-input" type="radio" name="rating8" id="star8-3" value="3">
+                        <label class="star-label" for="star8-3">&#9733;</label>
+                        <input class="star-input" type="radio" name="rating8" id="star8-2" value="2">
+                        <label class="star-label" for="star8-2">&#9733;</label>
+                        <input class="star-input" type="radio" name="rating8" id="star8-1" value="1">
+                        <label class="star-label" for="star8-1">&#9733;</label>
+                    </div>
+                    <p>Tender roasted chicken</p>
+                </div>
+            </a>
+            <a href="#" class="recipe">
+                <img src="Images/Vegetable-Stir-Fry.jpg" alt="Vegetable Stir-Fry">
+                <div class="recipe-details">
+                    <h3>Vegetable Stir-Fry</h3>
+                    <div class="rating" id="rating9">
+                        <input class="star-input" type="radio" name="rating9" id="star9-5" value="5">
+                        <label class="star-label" for="star9-5">&#9733;</label>
+                        <input class="star-input" type="radio" name="rating9" id="star9-4" value="4">
+                        <label class="star-label" for="star9-4">&#9733;</label>
+                        <input class="star-input" type="radio" name="rating9" id="star9-3" value="3">
+                        <label class="star-label" for="star9-3">&#9733;</label>
+                        <input class="star-input" type="radio" name="rating9" id="star9-2" value="2">
+                        <label class="star-label" for="star9-2">&#9733;</label>
+                        <input class="star-input" type="radio" name="rating9" id="star9-1" value="1">
+                        <label class="star-label" for="star9-1">&#9733;</label>
+                    </div>
+                    <p>A colorful medley of crisp vegetables</p>
+                </div>
+            </a>            
+            <a href="#" class="recipe">
+                <img src="Images/Homemade-Lasagna.jpg" alt="Homemade Lasagna">
+                <div class="recipe-details">
+                    <h3>Homemade Lasagna</h3>
+                    <div class="rating" id="rating10">
+                        <input class="star-input" type="radio" name="rating10" id="star10-5" value="5">
+                        <label class="star-label" for="star10-5">&#9733;</label>
+                        <input class="star-input" type="radio" name="rating10" id="star10-4" value="4">
+                        <label class="star-label" for="star10-4">&#9733;</label>
+                        <input class="star-input" type="radio" name="rating10" id="star10-3" value="3">
+                        <label class="star-label" for="star10-3">&#9733;</label>
+                        <input class="star-input" type="radio" name="rating10" id="star10-2" value="2">
+                        <label class="star-label" for="star10-2">&#9733;</label>
+                        <input class="star-input" type="radio" name="rating10" id="star10-1" value="1">
+                        <label class="star-label" for="star10-1">&#9733;</label>
+                    </div>
+                    <p>Layers of tender lasagna noodles</p>
+                </div>
+            </a>
+            <a href="#" class="recipe">
+                <img src="Images/Chocolate-Chip-Cookies.jpg" alt="Chocolate Chip Cookies">
+                <div class="recipe-details">
+                    <h3>Chocolate Chip Cookies</h3>
+                    <div class="rating" id="rating11">
+                        <input class="star-input" type="radio" name="rating11" id="star11-5" value="5">
+                        <label class="star-label" for="star11-5">&#9733;</label>
+                        <input class="star-input" type="radio" name="rating11" id="star11-4" value="4">
+                        <label class="star-label" for="star11-4">&#9733;</label>
+                        <input class="star-input" type="radio" name="rating11" id="star11-3" value="3">
+                        <label class="star-label" for="star11-3">&#9733;</label>
+                        <input class="star-input" type="radio" name="rating11" id="star11-2" value="2">
+                        <label class="star-label" for="star11-2">&#9733;</label>
+                        <input class="star-input" type="radio" name="rating11" id="star11-1" value="1">
+                        <label class="star-label" for="star11-1">&#9733;</label>
+                    </div>
+                    <p>Soft and chewy cookies</p>
+                </div>
+            </a>
+        </div>
+    </section>      
+</body>
+</html>

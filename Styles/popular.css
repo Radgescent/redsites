@@ -1,0 +1,92 @@
+.popular-recipes {
+    display: flex;
+    flex-wrap: wrap;
+    overflow-x: auto; /* Enable horizontal scrolling */
+    white-space: nowrap;
+    padding: 20px;
+}
+
+.recipe-container {
+    display: flex;
+    flex-wrap: nowrap;
+}
+
+.recipe {
+    width: 300px; 
+    max-width: calc(33.33% - 20px); 
+    margin-bottom: 10px;
+    border: 1px solid #ccc;
+    border-radius: 10px;
+
+    word-wrap: break-word; 
+    text-decoration: none;
+    transition: transform 0.3s ease; 
+    flex: 0 0 auto; 
+    margin-right: 20px;
+}
+
+.recipe-header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.recipe:hover {
+    transform: scale(1.05); 
+}
+
+.recipe img {
+    width: 100%;
+    border-radius: 10px 10px 0 0; 
+}
+
+.recipe-details {
+    max-width: 100%;
+    padding: 10px;
+    word-break: break-all;
+}
+
+.recipe-details p {
+    word-wrap: break-word;
+}
+
+.recipe h3 {
+    margin-top: 0;
+    font-size: 18px;
+    color: black;
+    padding-bottom: 0;
+}
+
+.recipe p {
+    margin-top: 5px;
+    font-size: 14px;
+    color: black;
+}
+
+.rating {
+    display: flex;
+    justify-content: flex-end; 
+    flex-direction: row-reverse; 
+}
+
+.star-input {
+    display: none; 
+}
+
+.star-label {
+    font-size: 24px;
+    color: #ccc; 
+    cursor: pointer;
+    transition: color 0.3s ease, font-size 0.2s ease;
+}
+
+.star-input:checked + .star-label,
+.star-input:checked + .star-label ~ .star-label {
+    color: gold;
+}
+
+.star-label:hover,
+.star-label:hover ~ .star-label {
+    font-size: 28px; 
+}
+
